@@ -8,7 +8,7 @@ const Header = () => {
           <img 
             src="/lovable-uploads/0901fd3a-0c0e-434e-b687-ad024ed5adb9.png" 
             alt="Snipify AI Logo" 
-            className="h-10 w-auto"
+            className="h-12 w-auto filter drop-shadow-lg"
           />
         </div>
         

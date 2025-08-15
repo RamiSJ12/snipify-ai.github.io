@@ -10,7 +10,7 @@ const Footer = () => {
             <img 
               src="/lovable-uploads/0901fd3a-0c0e-434e-b687-ad024ed5adb9.png" 
               alt="Snipify AI Logo" 
-              className="h-12 w-auto mx-auto mb-4"
+              className="h-16 w-auto mx-auto mb-4 filter drop-shadow-lg"
             />
             <p className="text-muted-foreground italic">
               Your content, smarter, faster, everywhere.
