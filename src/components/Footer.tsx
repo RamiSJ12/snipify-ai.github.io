@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Logo */}
           <div className="mb-8">
             <img 
-              src="/lovable-uploads/0901fd3a-0c0e-434e-b687-ad024ed5adb9.png" 
+              src="/lovable-uploads/f0fd4213-08c1-4a7b-a7bb-b4cae232b51d.png" 
               alt="Snipify AI Logo" 
               className="h-16 w-auto mx-auto mb-4 filter drop-shadow-lg"
             />
