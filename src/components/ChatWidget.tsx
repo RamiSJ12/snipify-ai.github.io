@@ -20,8 +20,9 @@ const ChatWidget = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  // Load messages from localStorage on mount
+// Load messages from localStorage on mount
   useEffect(() => {
+    console.log("ChatWidget mounted: initializing state");
     const saved = localStorage.getItem("chatMessages");
     if (saved) {
       const parsed = JSON.parse(saved);
@@ -110,7 +111,7 @@ const ChatWidget = () => {
       {/* Chat Window */}
       <div
         className={cn(
-          "fixed bottom-24 right-6 w-96 h-[500px] bg-background border border-border rounded-2xl shadow-2xl flex flex-col transition-all duration-300 ease-in-out z-50",
+          "fixed bottom-24 right-6 w-96 h-[500px] bg-background border border-border rounded-2xl shadow-2xl flex flex-col transition-all duration-300 ease-in-out z-[9999]",
           isOpen
             ? "opacity-100 scale-100 translate-y-0"
             : "opacity-0 scale-95 translate-y-4 pointer-events-none"
@@ -208,8 +209,9 @@ const ChatWidget = () => {
       {/* Floating Chat Icon */}
       <Button
         onClick={() => setIsOpen(!isOpen)}
+        aria-label={isOpen ? "Close chat" : "Open chat"}
         className={cn(
-          "fixed bottom-6 right-6 w-14 h-14 rounded-full shadow-2xl transition-all duration-300 z-50",
+          "fixed bottom-6 right-6 w-14 h-14 rounded-full shadow-2xl transition-all duration-300 z-[9999]",
           isOpen && "rotate-90 scale-90"
         )}
         size="icon"
